@@ -83,12 +83,12 @@ def obfuscate_function_py3(f):
 
     return ''.join(s)
 
-def hello_world():
-    s = "Hello World"
-    for ch in s:
-        print(ch, end="")
-    print("")
+    def hello_world():
+        s = "Hello World"
+        for ch in s:
+            print(ch, end="")
+        print("")
 
-print("import types")
-print(obfuscate_function_py3(hello_world))
-print("hello_world()")
+    print("import types")
+    print(obfuscate_function_py3(hello_world))
+    print("hello_world()")
